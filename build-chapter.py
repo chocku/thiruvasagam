@@ -174,6 +174,14 @@ def parse_txt(filepath):
             eng_raw[-1] = eng_raw[-1].rstrip('*').strip()
             eng_raw = [l for l in eng_raw if l]
 
+        # ── Layer validation ──────────────────────────────────────────────────
+        # Each layer (Tamil / Translit / Gloss) must be exactly ONE line.
+        # Extra lines are silently dropped — warn loudly so the author can fix.
+        if len(content_lines) > 3:
+            print(f"  ERROR: verse {verse_num} has {len(content_lines)} content lines "
+                  f"(expected 3). Each layer must be ONE line with 4-space separators. "
+                  f"Only the first 3 lines will be used — transliteration/gloss may be wrong.")
+
         # Determine layers — always expect 4-layer (Tamil / Translit / Gloss / English)
         if len(content_lines) >= 3:
             tamil_line, translit_line, gloss_line = content_lines[0], content_lines[1], content_lines[2]
@@ -186,6 +194,13 @@ def parse_txt(filepath):
             print(f"  WARN: verse {verse_num} missing transliteration and gloss")
         else:
             continue
+
+        # Detect Tamil script in the translit slot — means multi-line Tamil bled over
+        _TAMIL = re.compile(r'[஀-௿]')
+        if translit_line and _TAMIL.search(translit_line):
+            print(f"  ERROR: verse {verse_num}: translit slot contains Tamil script — "
+                  f"the Tamil layer is split across multiple lines. "
+                  f"Put the entire Tamil verse on ONE line with 4-space separators.")
 
         verses.append({
             'num':     verse_num,
@@ -359,9 +374,18 @@ def main():
     prev_slug, prev_num, next_slug, next_num = get_nav_neighbours(data['chapter_num'])
     print(f"  Nav: prev={prev_slug} ({prev_num})  next={next_slug} ({next_num})")
 
+    # Auto-delete stale chapter files: same chapter number, different slug.
+    # These linger from old sessions and create broken links in chapters.html.
+    ch_num_str = str(data['chapter_num']).zfill(2)
+    chapters_dir = BASE / 'chapters'
+    for stale in chapters_dir.glob(f'{ch_num_str}-*.html'):
+        if stale.stem != slug:
+            stale.unlink()
+            print(f"  CLEANUP: Deleted stale file: chapters/{stale.name}")
+
     # Write HTML
     html = build_html(data, slug)
-    out_path = BASE / 'chapters' / f"{slug}.html"
+    out_path = chapters_dir / f"{slug}.html"
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write(html)
     print(f"  OK:Written: chapters/{slug}.html")
