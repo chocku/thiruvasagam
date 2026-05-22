@@ -146,11 +146,8 @@ def parse_txt(filepath):
         if not block:
             continue
 
-        # Skip closing Tiruchitrambalam block
-        if any('திருச்சிற்றம்பலம்' in l or 'TIRUCHITRAMBALAM' in l for l in block):
-            continue
-
         # First non-blank line = verse number
+        # (This also skips the closing Tiruchitrambalam block, which has no leading digit.)
         if not block[0].strip().isdigit():
             continue
         verse_num = int(block[0].strip())
