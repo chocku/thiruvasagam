@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poetic Forms · Thiruvasagam</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .forms-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.5rem;
+      margin: 1.8rem 0 0.5rem;
+      font-size: 0.88rem;
+      color: #555;
+    }
+    .forms-nav strong {
+      color: #888;
+      font-weight: normal;
+      font-size: 0.78rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      align-self: center;
+    }
+    .forms-nav a {
+      color: #111;
+    }
+
+    .form-card {
+      border-top: 2px solid #111;
+      margin: 3rem 0 0;
+      padding-top: 1.5rem;
+    }
+    .form-card h2 {
+      font-size: 1.35rem;
+      margin: 0 0 0.15rem;
+      letter-spacing: 0.01em;
+    }
+    .form-card .form-tamil {
+      font-size: 1.1rem;
+      color: #555;
+      margin: 0 0 0.1rem;
+    }
+    .form-card .form-meta {
+      font-size: 0.8rem;
+      color: #999;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin: 0 0 1rem;
+    }
+    .form-card p {
+      margin: 0 0 0.9rem;
+      line-height: 1.7;
+      color: #222;
+    }
+    .form-card .chapters-used {
+      font-size: 0.85rem;
+      color: #555;
+      margin: 0.5rem 0 1rem;
+    }
+    .form-card .chapters-used a {
+      color: #111;
+      margin-right: 0.4rem;
+    }
+
+    .example-block {
+      border-left: 3px solid #ddd;
+      padding: 0.8rem 1.1rem;
+      margin: 1rem 0 0.5rem;
+      background: #fafafa;
+    }
+    .example-block .example-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #aaa;
+      margin-bottom: 0.6rem;
+    }
+    .example-block .tamil-line {
+      font-size: 1.05rem;
+      color: #111;
+      margin-bottom: 0.25rem;
+      line-height: 1.6;
+    }
+    .example-block .translit-line {
+      font-style: italic;
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+    .example-block .english-line {
+      color: #333;
+      font-size: 0.93rem;
+      line-height: 1.6;
+    }
+    .example-block .example-source {
+      font-size: 0.78rem;
+      color: #bbb;
+      margin-top: 0.5rem;
+    }
+    .example-block .example-source a {
+      color: #999;
+    }
+
+    .form-tagline {
+      font-size: 1.05rem;
+      color: #444;
+      margin: 0.6rem 0 1rem;
+      font-style: italic;
+    }
+
+    .form-group-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #aaa;
+      margin: 3.5rem 0 0;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    @media (max-width: 620px) {
+      .form-card h2 { font-size: 1.15rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span class="site-title">திருவாசகம் · Thiruvasagam</span>
+    <a href="index.html">Home</a>
+    <a href="chapters.html">Chapters</a>
+    <a href="locations.html">Locations</a>
+    <a href="siva-names.html">Siva Names</a>
+    <a href="poetic-forms.html" class="active">Poetic Forms</a>
+    <a href="Reference.html">Reference</a>
+    <a href="dedication.html">Dedication</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="chapter-header">
+      <h1>Poetic Forms of Thiruvasagam</h1>
+      <div class="tamil-title">திருவாசகம் · யாப்பு வடிவங்கள்</div>
+      <div class="meta">10 forms · 51 chapters</div>
+    </div>
+
+    <p>
+      Thiruvasagam is not a single poem but a collection of 51 hymns each shaped by a distinct
+      Tamil poetic form. Manikkavasagar chose his form as carefully as his words: a vast cosmic
+      hymn calls for the long rolling lines of <em>agaval</em>; a dawn-waking song borrows the
+      intimate cadence of the <em>empavai</em> tradition; a dialogue riddle-game takes the
+      call-and-response structure of the <em>chazhal</em>. Understanding these forms reveals
+      a second layer of meaning in the text — not just <em>what</em> is said, but <em>how</em>
+      the form itself carries devotion.
+    </p>
+
+    <div class="forms-nav">
+      <strong>Jump to</strong>
+      <a href="#agaval">Agaval</a>
+      <a href="#patikam">Patikam</a>
+      <a href="#pattu">Pattu</a>
+      <a href="#empavai">Empavai</a>
+      <a href="#venpa">Venba</a>
+      <a href="#folk-games">Folk-Game Songs</a>
+      <a href="#palliyezhucchi">Palliyezhucchi</a>
+      <a href="#tacankam">Tasaangam</a>
+      <a href="#ccatakam">Shatakam</a>
+      <a href="#vinnappam">Vinnappam</a>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════
+         CLASSICAL METRES
+    ════════════════════════════════════════════════════ -->
+    <p class="form-group-label">Classical Metres</p>
+
+    <!-- AGAVAL -->
+    <div class="form-card" id="agaval">
+      <h2>Agaval</h2>
+      <div class="form-tamil">அகவல்</div>
+      <div class="form-meta">Chapters 1 · 2 · 3 · 4</div>
+      <div class="form-tagline">Long, flowing lines that pour forward like speech from the heart — the oldest verse form in Tamil.</div>
+      <p>
+        Agaval is the oldest verse form in Tamil poetry. Its name comes from the verb
+        <em>agavu</em> — to call out, to cry aloud — and the form carries that quality: long
+        lines that roll forward without pause, building into a wave of praise or longing.
+        It feels open and expansive, like someone speaking from the heart without stopping.
+      </p>
+      <p>
+        Manikkavasagar opens the entire Thiruvasagam with four agaval hymns in a row —
+        Sivapuranam, Kirttit-Tiru-Agaval, Tiru-Andap-Pakuti, and Pottri-t-Tiru-Agaval —
+        each running to dozens or hundreds of verses. It is the natural form for describing
+        something boundless: Shiva's grace, the soul's journey, the whole of creation.
+      </p>
+      <div class="example-block">
+        <div class="example-label">Example · Ch. 1, v. 1–2 · Sivapuranam</div>
+        <div class="tamil-line">நமச்சிவாய வாழ்க நாதன் தாள் வாழ்க<br>இமைப்பொழுதும் என் நெஞ்சில் நீங்காதான் தாள் வாழ்க</div>
+        <div class="translit-line">namachchivaaya vaazhka naathan thaaL vaazhka<br>imaippozhudhum en nenjil niingaathaan thaaL vaazhka</div>
+        <div class="english-line">Long live the sacred name Namashivaya! Long live the feet of our Lord!<br>Long live the feet of the one who never leaves my heart, not even for a blink!</div>
+        <div class="example-source"><a href="chapters/01-sivapuranam.html">→ Read Sivapuranam</a></div>
+      </div>
+    </div>
+
+    <!-- VENBA -->
+    <div class="form-card" id="venpa">
+      <h2>Venba</h2>
+      <div class="form-tamil">வெண்பா</div>
+      <div class="form-meta">Chapter 47</div>
+      <div class="form-tagline">Short, precise poems where the final line lands like a quiet revelation.</div>
+      <p>
+        Venba is a short, tightly structured verse form. Each poem is small and
+        self-contained, and the final line always lands with a quiet, decisive weight —
+        like the last word in a thought that suddenly makes everything clear.
+      </p>
+      <p>
+        In Thiruvasagam, venba appears only once — Chapter 47, <em>Tiru-Venba</em> — as ten
+        short poems. Each verse circles around a feeling — bewilderment, longing, wonder —
+        and that closing line either resolves it or deepens it. They read like flashes of
+        insight, brief and precise.
+      </p>
+      <div class="example-block">
+        <div class="example-label">Example · Ch. 47, v. 1 · Tiru-Venba</div>
+        <div class="tamil-line">வெய்ய வினை இரண்டும் வெந்து அகல மெய் உருகி<br>பொய்யும் பொடியாகா தென் செய்கேன்</div>
+        <div class="translit-line">veiyya vinai iraNdum vendhu agala mei urughi<br>poiyyum podiyaagaa then seygeen</div>
+        <div class="english-line">The two fierce karmas may burn and depart, the body may melt — yet falsehood does not turn to dust. What shall I do?</div>
+        <div class="example-source"><a href="chapters/47-tiru-venpa.html">→ Read Tiru-Venba</a></div>
+      </div>
+    </div>
+
+    <!-- SHATAKAM -->
+    <div class="form-card" id="ccatakam">
+      <h2>Shatakam</h2>
+      <div class="form-tamil">சதகம்</div>
+      <div class="form-meta">Chapter 5</div>
+      <div class="form-tagline">A poem of exactly one hundred verses — ten stages of spiritual life, ten verses each.</div>
+      <p>
+        A <em>shatakam</em> is a poem of exactly one hundred verses. Each verse stands on its
+        own — a single thought, image, or confession — and together the hundred build into
+        something complete, like a hundred steps on the same path.
+      </p>
+      <p>
+        Chapter 5, <em>Tiru-Ccatakam</em>, uses this structure to trace ten stages of the
+        soul's journey toward Shiva — from the first moment of awakening through doubt,
+        surrender, and ultimately joy — ten verses to each stage. The hundred-verse form gives
+        it a sense of wholeness: every stage is accounted for, nothing is left out.
+      </p>
+      <div class="example-source" style="margin-top:0.2rem; font-size:0.85rem;">
+        <a href="chapters/05-tiru-ccatakam.html">→ Read Tiru-Ccatakam</a>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════
+         DEVOTIONAL STRUCTURES
+    ════════════════════════════════════════════════════ -->
+    <p class="form-group-label" style="margin-top:3.5rem;">Devotional Structures</p>
+
+    <!-- PATIKAM -->
+    <div class="form-card" id="patikam">
+      <h2>Patikam</h2>
+      <div class="form-tamil">பதிகம்</div>
+      <div class="form-meta">Chapters 21 · 22 · 30 · 36 · 44 · and others</div>
+      <div class="form-tagline">Ten verses, one sacred site, one act of devotion — the classic form of Tamil temple hymns.</div>
+      <p>
+        A <em>patikam</em> is a set of ten verses on a single theme, addressed to Shiva at
+        a specific sacred site. Ten verses, one place, one feeling — the form is focused and
+        complete. Tamil devotional poetry is full of patikams; the Tevaram hymns of the
+        Nayanmars are built almost entirely from them.
+      </p>
+      <p>
+        In Thiruvasagam, several chapters are patikams — most addressed to Shiva at
+        Chidambaram or other temples. Each of the ten verses approaches the same devotion
+        from a slightly different angle, and the final verse typically closes with a personal
+        vow or prayer.
+      </p>
+      <div class="example-source" style="margin-top:0.2rem; font-size:0.85rem;">
+        <a href="chapters/21-koyil-mutta-tiruppatikam.html">→ Ch. 21 Koyil-Mutta-Tiruppatikam</a>
+        &nbsp;·&nbsp;
+        <a href="chapters/22-koyil-tiruppatikam.html">→ Ch. 22 Koyil-Tiruppatikam</a>
+      </div>
+    </div>
+
+    <!-- PATTU -->
+    <div class="form-card" id="pattu">
+      <h2>Pattu</h2>
+      <div class="form-tamil">பாட்டு</div>
+      <div class="form-meta">Chapters 17 · 18 · 23–29 · 31–35 · 37 · 40 · 41 · 42 · 45 · and others</div>
+      <div class="form-tagline">Simply means "song" — the most common form in the collection, covering every mood.</div>
+      <p>
+        <em>Pattu</em> simply means "song" in Tamil, and as a chapter designation it signals
+        a lyric composition meant to be sung — as opposed to the longer agaval hymns or the
+        structured patikam decades. In Thiruvasagam, the pattu chapters form the backbone of
+        the collection: over twenty chapters bear this designation, each a sustained lyric on
+        a single devotional theme.
+      </p>
+      <p>
+        The pattu chapters range enormously in tone — from the longing of Annai-Pattu ("the
+        Mother-Song," Chapter 17) and the bird-messenger of Kuyil-Pattu ("the Cuckoo-Song,"
+        Chapter 18) to the warrior imagery of Arut-Pattu ("the Grace-Song," Chapter 29) and
+        the wonder-catalogue of Arruputa-Pattu ("the Miracle-Song," Chapter 41). The form
+        itself is flexible; what unites the pattu chapters is their lyric intensity and their
+        suitability for musical performance.
+      </p>
+      <div class="example-source" style="margin-top:0.2rem; font-size:0.85rem;">
+        <a href="chapters/17-annai-pattu.html">→ Ch. 17 Annai-Pattu</a>
+        &nbsp;·&nbsp;
+        <a href="chapters/41-arrputa-pattu.html">→ Ch. 41 Arrputa-Pattu</a>
+      </div>
+    </div>
+
+    <!-- VINNAPPAM -->
+    <div class="form-card" id="vinnappam">
+      <h2>Vinnappam</h2>
+      <div class="form-tamil">விண்ணப்பம்</div>
+      <div class="form-meta">Chapter 6</div>
+      <div class="form-tagline">A direct plea to Shiva — not praise, but honest asking.</div>
+      <p>
+        A <em>vinnappam</em> is a direct appeal — a plea addressed to Shiva asking for
+        something specific. The word means "humbly bringing something to your attention,"
+        and the tone is exactly that: not praise, but honest asking.
+      </p>
+      <p>
+        Chapter 6, <em>Neettal Vinnappam</em> ("Petition for Release"), is 50 verses, each
+        closing with the refrain "see that you release me." The poet piles up images of
+        helplessness — a moth drawn to flame, a fish when the water dries up, an ant inside
+        a burning stick — and holds them up to Shiva one by one, as reasons to let him go.
+      </p>
+      <div class="example-source" style="margin-top:0.2rem; font-size:0.85rem;">
+        <a href="chapters/06-neettal-vinnappam.html">→ Read Neettal Vinnappam</a>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════
+         RITUAL SONG FORMS
+    ════════════════════════════════════════════════════ -->
+    <p class="form-group-label" style="margin-top:3.5rem;">Ritual Song Forms</p>
+
+    <!-- EMPAVAI -->
+    <div class="form-card" id="empavai">
+      <h2>Empavai</h2>
+      <div class="form-tamil">எம்பாவை</div>
+      <div class="form-meta">Chapter 7</div>
+      <div class="form-tagline">A pre-dawn gathering song — girls go door to door waking friends to come worship together.</div>
+      <p>
+        The <em>empavai</em> tradition is a seasonal vow-song performed by young women during
+        the Tamil month of Margazhi (mid-December to mid-January). Before dawn, a group goes
+        from house to house waking friends to join them for a ritual bath in the sacred pond
+        and worship of the deity. The form's essential movement is this gathering — verse by
+        verse, more voices join until the whole community is drawn into devotion.
+      </p>
+      <p>
+        Chapter 7, <em>Tiru-Empavai</em>, is one of the most beloved chapters in the entire
+        collection — 20 verses, each closing with the refrain <em>Elor Empavai</em> ("Come,
+        girls, to our vow"). Composed at Thiruvannamalai, it moves from gentle teasing of a
+        sleeping friend to pure wonder: Shiva is the light without beginning or end, the
+        dancer of Thillai, at once male, female, sky, and earth. It is still recited in
+        temples during the Margazhi season.
+      </p>
+      <div class="example-block">
+        <div class="example-label">Example · Ch. 7, v. 1 · Tiru-Empavai (opening)</div>
+        <div class="tamil-line">ஆதியும் அந்தமும் இல்லா அரும்பெருஞ் சோதியை யாம்பாடக் கேட்டேயும்<br>வாள்தடங்கள் மாதே வளருதியோ</div>
+        <div class="translit-line">aathiyum anthamum illaa arumpperunch chothiyai yaam paadak ketteyum<br>vaaL thadangaL maathey vaLaruthiyo</div>
+        <div class="english-line">We sing of the great radiant Light that has no beginning and no end — even hearing us, O beautiful-eyed one, do you keep sleeping?</div>
+        <div class="example-source">Refrain: <em>Elor Empavai</em> — "Come, girls, to our vow" &nbsp;·&nbsp; <a href="chapters/07-tiru-empavai.html">→ Read Tiru-Empavai</a></div>
+      </div>
+    </div>
+
+    <!-- PALLIYEZHUCCHI -->
+    <div class="form-card" id="palliyezhucchi">
+      <h2>Palliyezhucchi</h2>
+      <div class="form-tamil">பள்ளியெழுச்சி</div>
+      <div class="form-meta">Chapter 20</div>
+      <div class="form-tagline">A dawn-song to wake the god — and beneath that, a call for the soul to wake up too.</div>
+      <p>
+        A <em>palliyezhucchi</em> is a dawn-song sung at the temple to wake the deity at
+        the start of morning worship. The singer describes the world coming to life outside —
+        birds calling, stars fading, devotees arriving with flowers — and asks the god to
+        please rise and receive their love.
+      </p>
+      <p>
+        Chapter 20, <em>Tiru-Palliyezhucchi</em>, composed at Thirupperunthurai, has ten
+        stanzas each ending with "O our Lord, please arise from your sacred rest." But it
+        works on two levels at once: the god waking from sleep is also the soul waking from
+        its own long sleep of forgetting.
+      </p>
+      <div class="example-source" style="margin-top:0.2rem; font-size:0.85rem;">
+        <a href="chapters/20-tiru-palliyezhucchi.html">→ Read Tiru-Palliyezhucchi</a>
+      </div>
+    </div>
+
+    <!-- TASAANGAM -->
+    <div class="form-card" id="tacankam">
+      <h2>Tasaangam</h2>
+      <div class="form-tamil">தசாங்கம்</div>
+      <div class="form-meta">Chapter 19</div>
+      <div class="form-tagline">A king's tribute-song — ten royal attributes, each one reimagined as a quality of Shiva.</div>
+      <p>
+        A <em>tasaangam</em> is a song of praise built around ten royal attributes
+        traditionally used to honour a king: his Name, Country, Town, River, Mountain,
+        Horse, Army, Drum, Garland, and Flag. One stanza for each, one complete picture
+        of a sovereign. The form comes from ancient Tamil court poetry.
+      </p>
+      <p>
+        Chapter 19, <em>Tiru-Tacankam</em>, takes this form and turns it entirely toward
+        Shiva — each royal attribute becomes a dimension of his grace. His "army" is the
+        force that destroys ego, karma, and illusion; his "drum" is the primal sound at
+        the root of creation; his "flag" bears Nandi the sacred bull. A king's praise-song
+        becomes a hymn of devotion.
+      </p>
+      <div class="example-source" style="margin-top:0.2rem; font-size:0.85rem;">
+        <a href="chapters/19-tiru-tacankam.html">→ Read Tiru-Tacankam</a>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════
+         FOLK-GAME SONGS
+    ════════════════════════════════════════════════════ -->
+    <p class="form-group-label" style="margin-top:3.5rem;">Folk-Game Songs</p>
+
+    <p style="color:#444; line-height:1.7; margin-bottom:0;">
+      A remarkable feature of Thiruvasagam is the group of chapters (roughly Chapters 8–16)
+      cast in traditional Tamil women's folk-game forms. Each form is a communal song-game with
+      its own seasonal context, its own set of props (a ball, a drum, a swing, a pestle), and
+      its own closing refrain inviting participation. Manikkavasagar takes these everyday
+      recreational forms and fills them entirely with devotion — the game becomes an act of
+      worship, the invitation to play becomes an invitation to let go. Each has its own
+      lively, communal rhythm that makes the praise feel joyful rather than solemn.
+    </p>
+
+    <!-- AMMANAI -->
+    <div class="form-card" id="ammanai">
+      <h2>Ammanai</h2>
+      <div class="form-tamil">அம்மானை</div>
+      <div class="form-meta">Chapter 8</div>
+      <div class="form-tagline">A women's ball-toss game turned into a hymn — each verse tossed to the next singer.</div>
+      <p>
+        The ammanai is a ball-toss game traditionally played by women in groups: one player
+        tosses a small ball while others catch and sing. Each verse in the <em>ammanai</em>
+        form ends with the invitation <em>ammāṉāy</em> — "O ammanai!" — calling the next
+        player to catch and continue.
+      </p>
+      <p>
+        Chapter 8, <em>Tiru-Ammanai</em>, composed at Tiruvannamalai, turns the game's
+        call-and-response into a meditation on a central theological paradox: the great gods
+        Brahma and Vishnu could not behold Shiva through any searching or any birth, yet he
+        came down freely, entered the poet's heart, and claimed even the lowliest as his own.
+        The game's lightness and the theology's weight sit together without irony.
+      </p>
+      <div class="example-block">
+        <div class="example-label">Example · Ch. 8, v. 1 · Tiru-Ammanai</div>
+        <div class="tamil-line">செங்கண் நெடுமாலும் சென்று இடந்தும் காண்பரிய பொங்கு மலர்ப்பாதம் பூதலத்தே போந்தருளி</div>
+        <div class="translit-line">chengkan nedumaalum chenRu idandhum kaanpariya pongu malar-paadam bhuudalatthE pOndharuLi</div>
+        <div class="english-line">Even Vishnu the red-eyed one searched and dug the earth, yet could not behold those radiant, flower-like feet — yet those very feet descended graciously to this earth.</div>
+        <div class="example-source">Refrain: <em>pādutuṅkāṇ ammāṉāy</em> — "Let us sing, O Ammanai!" &nbsp;·&nbsp; <a href="chapters/08-tiru-ammanai.html">→ Read Tiru-Ammanai</a></div>
+      </div>
+    </div>
+
+    <!-- CHAZHAL -->
+    <div class="form-card" id="chazhal">
+      <h2>Chazhal</h2>
+      <div class="form-tamil">சழல் (சாழல்)</div>
+      <div class="form-meta">Chapter 12</div>
+      <div class="form-tagline">A riddle-and-answer game — one woman poses a puzzle about Shiva, the other resolves it.</div>
+      <p>
+        The <em>chazhal</em> (or <em>sāzhal</em>) is a riddle-dialogue game: one woman poses
+        a puzzling or paradoxical question, and her companion answers it, closing with the
+        exclamation <em>Chazhal!</em> — a word of wonder or resolution, something like "There!
+        How's that!" The form's structure is antiphonal; it enacts the movement from confusion
+        to understanding in a single exchange.
+      </p>
+      <p>
+        Chapter 12, <em>Tiru-Ccazal</em>, applies this form to Shiva's paradoxes: why does
+        he wear ash and serpents? why does he carry a skull-bowl? why does he burn cities yet
+        bestow grace? Each question is a real theological puzzle; each answer reveals its
+        cosmic necessity. The tone is playful but the theology is serious — the dialogue form
+        perfectly mirrors the devotee's movement from bewilderment at Shiva's contradictions
+        to recognition of their unity.
+      </p>
+      <div class="example-source" style="margin-top:0.2rem; font-size:0.85rem;">
+        <a href="chapters/12-tiru-ccazal.html">→ Read Tiru-Ccazal</a>
+      </div>
+    </div>
+
+    <!-- OTHER FOLK FORMS -->
+    <div class="form-card" id="folk-games">
+      <h2>Other Folk-Game Forms</h2>
+      <div class="form-tamil">பள்ளி · உந்தீபற · தெள்ளேணம் · ஊஞ்சல்</div>
+      <div class="form-meta">Chapters 9 · 11 · 13 · 14 · 15 · 16</div>
+      <div class="form-tagline">Six everyday games — pounding, swinging, flower-gathering, drum-beating — each made into an act of worship.</div>
+      <p>
+        Several other chapters in Thiruvasagam draw on distinct women's folk-song traditions,
+        each with its own occasion and refrain:
+      </p>
+      <ul style="line-height:2; color:#222; padding-left:1.3rem;">
+        <li>
+          <strong>Tiru-Porr-Cunnam</strong> (Ch. 9) — a pounding-song (<em>cunnam</em> = paste):
+          women pound sacred spiced paste as an offering, closing each verse with "let us pound
+          the golden sacred paste and dance!" The cosmos itself becomes the mortar, Mount Meru
+          the pestle.
+        </li>
+        <li>
+          <strong>Tiru-Tellenam</strong> (Ch. 11) — devotees beat the <em>thellenam</em>,
+          a small hand-drum used in communal praise, calling one another with "shall we beat
+          the thellenam?"
+        </li>
+        <li>
+          <strong>Tiru-Puvalli</strong> (Ch. 13) — a flower-gathering song: women go out to
+          gather flowers for worship, closing with "shall we pluck the flower-creeper?"
+        </li>
+        <li>
+          <strong>Tiru-Untiyar</strong> (Ch. 14) — a work-song using the refrain
+          <em>Unthiipara!</em> — a traditional pounding-cry meaning "drive it away / rise up,
+          be gone!" — each verse narrating one act of Shiva's cosmic power.
+        </li>
+        <li>
+          <strong>Tiru-Tol-Nokkam</strong> (Ch. 15) — a seasonal women's group game, each
+          verse closing with "shall we play the Thoanokkam?"
+        </li>
+        <li>
+          <strong>Tiru-Ponnusal</strong> (Ch. 16) — a swing-song (<em>oonjal</em>): women
+          swing on a golden swing and sing Shiva's praises, closing with "shall we swing
+          on the golden swing?"
+        </li>
+      </ul>
+      <p>
+        Together these six chapters form a gallery of everyday Tamil women's life transformed
+        into acts of worship — the devotion is real, but so is the play.
+      </p>
+    </div>
+
+    <div style="height: 4rem;"></div>
+
+  </div><!-- /container -->
+</body>
+</html>

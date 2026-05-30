@@ -283,6 +283,7 @@ def build_html(data, slug):
     <a href="../chapters.html">Chapters</a>
     <a href="../locations.html">Locations</a>
     <a href="../siva-names.html">Siva Names</a>
+    <a href="../poetic-forms.html">Poetic Forms</a>
     <a href="../Reference.html">Reference</a>
     <a href="../dedication.html">Dedication</a>
   </nav>
