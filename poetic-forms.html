@@ -9,20 +9,23 @@
     .forms-nav {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.4rem 1.5rem;
+      gap: 1rem 2.5rem;
       margin: 1.8rem 0 0.5rem;
-      font-size: 0.88rem;
-      color: #555;
     }
-    .forms-nav strong {
-      color: #888;
-      font-weight: normal;
-      font-size: 0.78rem;
-      letter-spacing: 0.05em;
+    .forms-nav-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    .forms-nav-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.07em;
       text-transform: uppercase;
-      align-self: center;
+      color: #aaa;
+      margin-bottom: 0.1rem;
     }
     .forms-nav a {
+      font-size: 0.9rem;
       color: #111;
     }
 
@@ -157,17 +160,25 @@
     </p>
 
     <div class="forms-nav">
-      <strong>Jump to</strong>
-      <a href="#agaval">Agaval</a>
-      <a href="#patikam">Patikam</a>
-      <a href="#pattu">Pattu</a>
-      <a href="#empavai">Empavai</a>
-      <a href="#venpa">Venba</a>
-      <a href="#folk-games">Folk-Game Songs</a>
-      <a href="#palliyezhucchi">Palliyezhucchi</a>
-      <a href="#tacankam">Tasaangam</a>
-      <a href="#ccatakam">Shatakam</a>
-      <a href="#vinnappam">Vinnappam</a>
+      <div class="forms-nav-group">
+        <span class="forms-nav-label">Classical Metres</span>
+        <a href="#agaval">Agaval</a>
+        <a href="#venpa">Venba</a>
+        <a href="#ccatakam">Shatakam</a>
+      </div>
+      <div class="forms-nav-group">
+        <span class="forms-nav-label">Devotional Structures</span>
+        <a href="#patikam">Patikam</a>
+        <a href="#pattu">Pattu</a>
+        <a href="#vinnappam">Vinnappam</a>
+      </div>
+      <div class="forms-nav-group">
+        <span class="forms-nav-label">Ritual &amp; Folk Songs</span>
+        <a href="#empavai">Empavai</a>
+        <a href="#palliyezhucchi">Palliyezhucchi</a>
+        <a href="#tacankam">Tasaangam</a>
+        <a href="#folk-games">Folk-Game Songs</a>
+      </div>
     </div>
 
     <!-- ═══════════════════════════════════════════════════
