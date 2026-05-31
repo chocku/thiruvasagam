@@ -337,7 +337,7 @@ def build_html(data, slug):
     .mood-tags {{ margin: 0.5rem 0 0; display: flex; gap: 0.4rem; flex-wrap: wrap; }}
     .mood-tag {{
       font-size: 0.72rem; letter-spacing: 0.07em; text-transform: uppercase;
-      color: #555; border: 1px solid #bbb; border-radius: 2px;
+      color: #333; border: 1px solid #999; border-radius: 2px;
       padding: 0.15rem 0.5rem;
     }}
   </style>
