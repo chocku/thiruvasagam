@@ -90,6 +90,60 @@ CHAPTER_SLUGS = {
     51: "51-acco-patikam",
 }
 
+CHAPTER_MOODS = {
+     1: ["Devotion", "Awe"],
+     2: ["Joy", "Praise"],
+     3: ["Wonder", "Awe"],
+     4: ["Praise", "Surrender"],
+     5: ["Longing", "Surrender"],
+     6: ["Longing", "Anguish"],
+     7: ["Joy", "Playfulness"],
+     8: ["Gratitude", "Joy"],
+     9: ["Joy", "Praise"],
+    10: ["Joy", "Praise"],
+    11: ["Joy", "Wonder"],
+    12: ["Playfulness", "Wonder"],
+    13: ["Playfulness", "Joy"],
+    14: ["Wonder", "Praise"],
+    15: ["Wonder", "Devotion"],
+    16: ["Joy", "Playfulness"],
+    17: ["Wonder", "Awe"],
+    18: ["Longing"],
+    19: ["Praise"],
+    20: ["Longing", "Wonder"],
+    21: ["Anguish"],
+    22: ["Anguish", "Longing"],
+    23: ["Anguish"],
+    24: ["Surrender"],
+    25: ["Longing"],
+    26: ["Wonder"],
+    27: ["Longing"],
+    28: ["Surrender", "Longing"],
+    29: ["Longing", "Surrender"],
+    30: ["Wonder", "Gratitude"],
+    31: ["Wonder", "Praise"],
+    32: ["Longing", "Anguish"],
+    33: ["Surrender", "Joy"],
+    34: ["Wonder", "Surrender"],
+    35: ["Wonder"],
+    36: ["Praise"],
+    37: ["Surrender"],
+    38: ["Gratitude", "Wonder"],
+    39: ["Longing", "Surrender"],
+    40: ["Joy", "Gratitude"],
+    41: ["Wonder", "Gratitude"],
+    42: ["Wonder", "Praise"],
+    43: ["Praise"],
+    44: ["Longing", "Anguish"],
+    45: ["Praise"],
+    46: ["Praise"],
+    47: ["Wonder", "Gratitude"],
+    48: ["Praise", "Wonder"],
+    49: ["Longing"],
+    50: ["Anguish", "Longing"],
+    51: ["Wonder"],
+}
+
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -267,6 +321,11 @@ def build_html(data, slug):
     summary_html = (f'\n    <p class="chapter-summary">{escape(data["summary"])}</p>\n'
                     if data.get('summary') else '')
 
+    moods = CHAPTER_MOODS.get(data['chapter_num'], [])
+    mood_html = ('      <div class="mood-tags">' +
+                 ''.join(f'<span class="mood-tag">{m}</span>' for m in moods) +
+                 '</div>\n') if moods else ''
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -274,6 +333,14 @@ def build_html(data, slug):
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{escape(data['english_title'])} · Thiruvasagam</title>
   <link rel="stylesheet" href="../style.css" />
+  <style>
+    .mood-tags {{ margin: 0.5rem 0 0; display: flex; gap: 0.4rem; flex-wrap: wrap; }}
+    .mood-tag {{
+      font-size: 0.72rem; letter-spacing: 0.07em; text-transform: uppercase;
+      color: #888; border: 1px solid #ddd; border-radius: 2px;
+      padding: 0.15rem 0.5rem;
+    }}
+  </style>
 </head>
 <body>
 
@@ -295,7 +362,7 @@ def build_html(data, slug):
       <h1>{escape(data['english_title'])}</h1>
       <div class="tamil-title">{escape(data['tamil_title'])}</div>
       <div class="meta">Chapter {data['chapter_num']} · Composed at {escape(data['location'])}</div>
-    </div>
+{mood_html}    </div>
 
 {nav}
 {summary_html}
