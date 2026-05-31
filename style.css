@@ -49,7 +49,7 @@ nav a { font-size: 0.95rem; }
 
 .hero .subtitle {
   font-size: 1.1rem;
-  color: #555;
+  color: #444;
   margin-bottom: 2rem;
 }
 
@@ -78,7 +78,7 @@ nav a { font-size: 0.95rem; }
 
 .hero-quote-english {
   font-size: 1rem;
-  color: #666;
+  color: #555;
   margin-top: 0.5rem;
   font-style: italic;
 }
@@ -96,16 +96,16 @@ nav a { font-size: 0.95rem; }
   padding: 1rem 1.2rem;
 }
 
-.chapter-card .num { font-size: 0.8rem; color: #888; }
+.chapter-card .num { font-size: 0.8rem; color: #666; }
 .chapter-card .name { font-size: 1rem; margin-top: 0.2rem; }
 .chapter-card.available { border-color: #111; cursor: pointer; }
 .chapter-card.available:hover { background: #f5f5f5; }
-.chapter-card.coming-soon { color: #aaa; cursor: default; }
+.chapter-card.coming-soon { color: #888; cursor: default; }
 
 /* ── Chapter summary ── */
 .chapter-summary {
   font-size: 0.92rem;
-  color: #555;
+  color: #444;
   line-height: 1.7;
   margin: 1.25rem 0 1.5rem;
   padding: 1rem 1.2rem;
@@ -157,8 +157,8 @@ nav a { font-size: 0.95rem; }
 }
 
 .chapter-header h1 { font-size: 1.8rem; }
-.chapter-header .tamil-title { font-size: 1.2rem; color: #555; margin-top: 0.3rem; }
-.chapter-header .meta { font-size: 0.85rem; color: #888; margin-top: 0.5rem; }
+.chapter-header .tamil-title { font-size: 1.2rem; color: #444; margin-top: 0.3rem; }
+.chapter-header .meta { font-size: 0.85rem; color: #666; margin-top: 0.5rem; }
 
 /* ── Verse ── */
 .verse {
@@ -169,7 +169,7 @@ nav a { font-size: 0.95rem; }
 
 .verse-number {
   font-size: 0.8rem;
-  color: #aaa;
+  color: #777;
   margin-bottom: 0.6rem;
   font-family: monospace;
 }
@@ -181,14 +181,14 @@ nav a { font-size: 0.95rem; }
 
 .verse .translit {
   font-size: 0.9rem;
-  color: #888;
+  color: #666;
   font-style: italic;
   margin-bottom: 0.25rem;
 }
 
 .verse .gloss {
   font-size: 0.85rem;
-  color: #666;
+  color: #555;
   font-style: italic;
   margin-bottom: 0.8rem;
 }
@@ -205,7 +205,7 @@ footer {
   text-align: center;
   padding: 2rem;
   font-size: 0.8rem;
-  color: #aaa;
+  color: #777;
   border-top: 1px solid #eee;
   margin-top: 3rem;
 }
@@ -227,8 +227,8 @@ footer {
   margin-bottom: 2rem;
 }
 .page-header h2 { font-size: 1.8rem; }
-.page-subtitle { font-size: 1rem; color: #555; margin-top: 0.3rem; }
-.page-intro { margin-top: 1rem; color: #555; }
+.page-subtitle { font-size: 1rem; color: #444; margin-top: 0.3rem; }
+.page-intro { margin-top: 1rem; color: #444; }
 
 .life-story { margin-bottom: 3rem; }
 .story-body p { margin-bottom: 1.4rem; }
@@ -285,7 +285,7 @@ footer {
   margin-bottom: 0;
 }
 .temple-group-heading h4 { font-size: 1rem; font-weight: bold; margin-bottom: 0.15rem; }
-.temple-group-heading p { font-size: 0.8rem; color: #555; font-style: italic; }
+.temple-group-heading p { font-size: 0.8rem; color: #444; font-style: italic; }
 
 .temple-entry {
   border-bottom: 1px solid #eee;
@@ -302,21 +302,21 @@ footer {
 }
 .temple-num {
   font-size: 0.75rem;
-  color: #aaa;
+  color: #777;
   font-family: monospace;
   flex-shrink: 0;
 }
 .temple-names { display: flex; flex-direction: column; gap: 0.1rem; }
 .temple-tamil { font-size: 1.1rem; font-weight: bold; }
-.temple-english { font-size: 0.95rem; color: #555; }
+.temple-english { font-size: 0.95rem; color: #444; }
 .temple-district {
   margin-left: auto;
   font-size: 0.8rem;
-  color: #888;
+  color: #666;
   white-space: nowrap;
 }
 .temple-significance { margin-bottom: 0.6rem; }
-.temple-hymns { font-size: 0.85rem; color: #555; }
+.temple-hymns { font-size: 0.85rem; color: #444; }
 .hymns-label { font-weight: bold; color: #333; }
 
 /* ── Chapter groups ── */
@@ -345,18 +345,18 @@ footer {
 }
 
 .group-title { font-size: 1.1rem; margin: 0; }
-.group-desc { font-size: 0.85rem; color: #777; margin: 0; margin-left: auto; font-style: italic; }
+.group-desc { font-size: 0.85rem; color: #555; margin: 0; margin-left: auto; font-style: italic; }
 
 .chapter-card .verse-count {
   font-size: 0.75rem;
-  color: #999;
+  color: #777;
   margin-top: 0.3rem;
   font-family: monospace;
 }
 
 .chapter-card .theme {
   font-size: 0.8rem;
-  color: #666;
+  color: #555;
   margin-top: 0.25rem;
   font-style: italic;
   line-height: 1.4;
@@ -391,7 +391,7 @@ footer {
   z-index: 1;
 }
 .sidebar-header h3 { font-size: 1.05rem; font-weight: bold; margin-bottom: 0.5rem; }
-.sidebar-header p { font-size: 0.78rem; color: #555; line-height: 1.5; }
+.sidebar-header p { font-size: 0.78rem; color: #444; line-height: 1.5; }
 .sidebar-list { list-style: none; }
 .sidebar-item {
   display: flex;
@@ -413,9 +413,9 @@ footer {
 }
 .sidebar-item-info { display: flex; flex-direction: column; min-width: 0; }
 .sidebar-tamil { font-size: 0.9rem; font-weight: bold; line-height: 1.3; }
-.sidebar-english { font-size: 0.78rem; color: #444; margin-top: 0.1rem; }
-.sidebar-district { font-size: 0.7rem; color: #888; margin-top: 0.15rem; }
-.sidebar-note { font-size: 0.73rem; color: #666; font-style: italic; line-height: 1.4; margin-top: 0.25rem; }
+.sidebar-english { font-size: 0.78rem; color: #333; margin-top: 0.1rem; }
+.sidebar-district { font-size: 0.7rem; color: #666; margin-top: 0.15rem; }
+.sidebar-note { font-size: 0.73rem; color: #555; font-style: italic; line-height: 1.4; margin-top: 0.25rem; }
 .sidebar-group-label {
   padding: 0.55rem 1rem;
   font-size: 0.65rem;
@@ -452,7 +452,7 @@ footer {
 .temple-photo-caption {
   display: block;
   font-size: 0.7rem;
-  color: #888;
+  color: #666;
   text-align: right;
   margin-top: 0.25rem;
 }
