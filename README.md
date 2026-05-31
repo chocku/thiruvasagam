@@ -21,11 +21,14 @@ chapters/            Generated HTML pages — rebuilt from translated/ by build-
 chapters.html        Chapter index
 index.html           Home page
 dedication.html      Dedication page
-locations.html       Sacred locations referenced in the text
-siva-names.html      Names and epithets of Shiva used across the chapters
-Reference.html       Scholarly reference notes
+locations.html       Interactive map of sacred sites referenced in the text
+siva-names.html      Names and epithets of Shiva — 35 names across 5 thematic categories
+poetic-forms.html    Guide to the 10 poetic forms used across the 51 chapters
+stories.html         16 stories and legends referenced in the verses
+Reference.html       Source texts and G.U. Pope 1900 translation (embedded)
 style.css            Site stylesheet
 build-chapter.py     Build script: .txt → HTML
+build-all.ps1        Batch build script — rebuilds all 51 chapters
 CLAUDE.md            Full translation guidelines and glossary (for AI-assisted sessions)
 EDIT-NOTES.md        Editing task list (Task A prose pass, Task B reframes)
 SENSITIVE-LOG.md     Content sensitivity log (local only, not git-tracked)
@@ -75,12 +78,23 @@ All 51 chapters translated, built, and published. See `PROGRESS.md` for the edit
 
 ---
 
+## Site features
+
+| Feature | Description |
+|---|---|
+| 51 chapters | Full Tamil text · transliteration · word-by-word gloss · English prose |
+| Mood tags | Every chapter tagged with 1–2 mood words (Wonder, Joy, Longing, etc.) |
+| Locations | Interactive map of all sacred sites in the text |
+| Siva Names | 35 names and epithets across 5 thematic categories |
+| Poetic Forms | 10 verse forms explained with examples from the text |
+| Stories | 16 myths and legends referenced in the verses, retold in plain English |
+
 ## Editorial tasks
 
 | Task | Status |
 |---|---|
 | Task A — Per-chapter prose edit pass (all 51 chapters) | Complete |
-| Task C — Add missing transliteration layer (Ch 41–45, 51) | Complete |
+| Task C — Add transliteration layer (Ch 41–45, 51) | Complete |
 | Task B — Women-as-obstacle verse reframes (Ch 38, 40, 51) | Pending |
 
-See `EDIT-NOTES.md` for full task details.
+See `EDIT-NOTES.md` for full task details and verse list.
