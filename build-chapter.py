@@ -337,7 +337,7 @@ def build_html(data, slug):
     .mood-tags {{ margin: 0.5rem 0 0; display: flex; gap: 0.4rem; flex-wrap: wrap; }}
     .mood-tag {{
       font-size: 0.72rem; letter-spacing: 0.07em; text-transform: uppercase;
-      color: #333; border: 1px solid #999; border-radius: 2px;
+      color: #c8c4bc; border: 1px solid #4a4540; border-radius: 2px;
       padding: 0.15rem 0.5rem;
     }}
   </style>
@@ -368,7 +368,7 @@ def build_html(data, slug):
 {summary_html}
 {verses_html}
 
-    <p style="text-align:center; margin-top: 3rem; color: #888;">திருச்சிற்றம்பலம் · Tiruchitrambalam</p>
+    <p style="text-align:center; margin-top: 3rem; color: #6a6560;">திருச்சிற்றம்பலம் · Tiruchitrambalam</p>
 
 {nav}
 

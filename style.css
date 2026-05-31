@@ -4,12 +4,12 @@
 /* ── Base ── */
 body {
   font-family: Georgia, serif;
-  background: #fff;
-  color: #111;
+  background: #1c1a17;
+  color: #e8e4dc;
   line-height: 1.7;
 }
 
-a { color: inherit; text-decoration: none; }
+a { color: #e8e4dc; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 /* ── Layout ── */
@@ -21,7 +21,7 @@ a:hover { text-decoration: underline; }
 
 /* ── Nav ── */
 nav {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #3a3530;
   padding: 1rem 1.5rem;
   display: flex;
   flex-wrap: wrap;
@@ -30,7 +30,8 @@ nav {
 }
 
 nav .site-title { font-size: 1.1rem; font-weight: bold; }
-nav a { font-size: 0.95rem; }
+nav a { font-size: 0.95rem; color: #c8c4bc; }
+nav a:hover { color: #e8e4dc; }
 
 @media (max-width: 480px) {
   nav { padding: 0.75rem 1rem; }
@@ -49,16 +50,22 @@ nav a { font-size: 0.95rem; }
 
 .hero .subtitle {
   font-size: 1.1rem;
-  color: #333;
+  color: #c8c4bc;
   margin-bottom: 2rem;
 }
 
 .hero .btn {
   display: inline-block;
   padding: 0.7rem 1.8rem;
-  border: 1px solid #111;
+  border: 1px solid #6a6560;
   font-size: 0.95rem;
   margin-top: 1rem;
+  color: #e8e4dc;
+}
+
+.hero .btn:hover {
+  background: #3a3530;
+  text-decoration: none;
 }
 
 .hero-quote {
@@ -70,7 +77,7 @@ nav a { font-size: 0.95rem; }
 .hero-quote-tamil {
   font-size: 1.4rem;
   line-height: 1.7;
-  color: #222;
+  color: #f0ece4;
   font-style: italic;
   font-weight: bold;
   letter-spacing: 0.02em;
@@ -78,7 +85,7 @@ nav a { font-size: 0.95rem; }
 
 .hero-quote-english {
   font-size: 1rem;
-  color: #333;
+  color: #c8c4bc;
   margin-top: 0.5rem;
   font-style: italic;
 }
@@ -92,24 +99,24 @@ nav a { font-size: 0.95rem; }
 }
 
 .chapter-card {
-  border: 1px solid #ddd;
+  border: 1px solid #3a3530;
   padding: 1rem 1.2rem;
 }
 
-.chapter-card .num { font-size: 0.8rem; color: #555; }
+.chapter-card .num { font-size: 0.8rem; color: #9a9590; }
 .chapter-card .name { font-size: 1rem; margin-top: 0.2rem; }
-.chapter-card.available { border-color: #111; cursor: pointer; }
-.chapter-card.available:hover { background: #f5f5f5; }
-.chapter-card.coming-soon { color: #777; cursor: default; }
+.chapter-card.available { border-color: #6a6560; cursor: pointer; }
+.chapter-card.available:hover { background: #252320; }
+.chapter-card.coming-soon { color: #5a5550; cursor: default; }
 
 /* ── Chapter summary ── */
 .chapter-summary {
   font-size: 0.92rem;
-  color: #333;
+  color: #c8c4bc;
   line-height: 1.7;
   margin: 1.25rem 0 1.5rem;
   padding: 1rem 1.2rem;
-  border-left: 3px solid #ddd;
+  border-left: 3px solid #3a3530;
   font-style: italic;
 }
 
@@ -125,16 +132,16 @@ nav a { font-size: 0.95rem; }
 .nav-btn {
   display: inline-block;
   padding: 0.45rem 1rem;
-  border: 1px solid #111;
+  border: 1px solid #6a6560;
   font-size: 0.82rem;
   text-decoration: none;
-  color: #111;
+  color: #c8c4bc;
   white-space: nowrap;
 }
 
 .nav-btn:hover {
-  background: #111;
-  color: #fff;
+  background: #3a3530;
+  color: #e8e4dc;
   text-decoration: none;
 }
 
@@ -152,24 +159,24 @@ nav a { font-size: 0.95rem; }
 /* ── Chapter page ── */
 .chapter-header {
   margin-bottom: 3rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #3a3530;
   padding-bottom: 1.5rem;
 }
 
-.chapter-header h1 { font-size: 1.8rem; }
-.chapter-header .tamil-title { font-size: 1.2rem; color: #333; margin-top: 0.3rem; }
-.chapter-header .meta { font-size: 0.85rem; color: #555; margin-top: 0.5rem; }
+.chapter-header h1 { font-size: 1.8rem; color: #f0ece4; }
+.chapter-header .tamil-title { font-size: 1.2rem; color: #c8c4bc; margin-top: 0.3rem; }
+.chapter-header .meta { font-size: 0.85rem; color: #9a9590; margin-top: 0.5rem; }
 
 /* ── Verse ── */
 .verse {
   margin-bottom: 2.5rem;
   padding-bottom: 2.5rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #2e2b27;
 }
 
 .verse-number {
   font-size: 0.8rem;
-  color: #555;
+  color: #6a6560;
   margin-bottom: 0.6rem;
   font-family: monospace;
 }
@@ -177,27 +184,29 @@ nav a { font-size: 0.95rem; }
 .verse .tamil {
   font-size: 1.1rem;
   margin-bottom: 0.3rem;
+  color: #e8e4dc;
 }
 
 .verse .translit {
   font-size: 0.9rem;
-  color: #444;
+  color: #9a9590;
   font-style: italic;
   margin-bottom: 0.25rem;
 }
 
 .verse .gloss {
   font-size: 0.85rem;
-  color: #333;
+  color: #b0aca4;
   font-style: italic;
   margin-bottom: 0.8rem;
 }
 
 .verse blockquote {
-  border-left: 3px solid #111;
+  border-left: 3px solid #6a6560;
   padding-left: 1rem;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1rem;
+  color: #f0ece4;
 }
 
 /* ── Footer ── */
@@ -205,8 +214,8 @@ footer {
   text-align: center;
   padding: 2rem;
   font-size: 0.8rem;
-  color: #555;
-  border-top: 1px solid #eee;
+  color: #6a6560;
+  border-top: 1px solid #2e2b27;
   margin-top: 3rem;
 }
 
@@ -215,7 +224,7 @@ footer {
 .section-heading {
   font-size: 1.3rem;
   font-weight: bold;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #3a3530;
   padding-bottom: 0.5rem;
   margin-bottom: 2rem;
   margin-top: 0;
@@ -223,20 +232,20 @@ footer {
 
 .page-header {
   padding: 3rem 0 2rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #3a3530;
   margin-bottom: 2rem;
 }
-.page-header h2 { font-size: 1.8rem; }
-.page-subtitle { font-size: 1rem; color: #333; margin-top: 0.3rem; }
-.page-intro { margin-top: 1rem; color: #333; }
+.page-header h2 { font-size: 1.8rem; color: #f0ece4; }
+.page-subtitle { font-size: 1rem; color: #c8c4bc; margin-top: 0.3rem; }
+.page-intro { margin-top: 1rem; color: #c8c4bc; }
 
 .life-story { margin-bottom: 3rem; }
 .story-body p { margin-bottom: 1.4rem; }
 
 .map-section {
-  background: #f9f9f9;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  background: #161410;
+  border-top: 1px solid #3a3530;
+  border-bottom: 1px solid #3a3530;
   padding: 2rem 0 0;
   margin: 0 0 3rem;
 }
@@ -262,9 +271,9 @@ footer {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #111;
-  border: 2px solid #fff;
-  box-shadow: 0 0 0 1px #111;
+  background: #e8e4dc;
+  border: 2px solid #1c1a17;
+  box-shadow: 0 0 0 1px #e8e4dc;
 }
 .temple-marker-large span { width: 16px; height: 16px; }
 
@@ -281,14 +290,14 @@ footer {
 
 .temple-group-heading {
   padding: 2rem 0 0.6rem;
-  border-bottom: 2px solid #111;
+  border-bottom: 2px solid #6a6560;
   margin-bottom: 0;
 }
-.temple-group-heading h4 { font-size: 1rem; font-weight: bold; margin-bottom: 0.15rem; }
-.temple-group-heading p { font-size: 0.8rem; color: #333; font-style: italic; }
+.temple-group-heading h4 { font-size: 1rem; font-weight: bold; margin-bottom: 0.15rem; color: #f0ece4; }
+.temple-group-heading p { font-size: 0.8rem; color: #c8c4bc; font-style: italic; }
 
 .temple-entry {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #2e2b27;
   padding: 2rem 0;
 }
 .temple-entry:first-of-type { padding-top: 0; }
@@ -302,22 +311,22 @@ footer {
 }
 .temple-num {
   font-size: 0.75rem;
-  color: #555;
+  color: #6a6560;
   font-family: monospace;
   flex-shrink: 0;
 }
 .temple-names { display: flex; flex-direction: column; gap: 0.1rem; }
-.temple-tamil { font-size: 1.1rem; font-weight: bold; }
-.temple-english { font-size: 0.95rem; color: #333; }
+.temple-tamil { font-size: 1.1rem; font-weight: bold; color: #f0ece4; }
+.temple-english { font-size: 0.95rem; color: #c8c4bc; }
 .temple-district {
   margin-left: auto;
   font-size: 0.8rem;
-  color: #555;
+  color: #9a9590;
   white-space: nowrap;
 }
 .temple-significance { margin-bottom: 0.6rem; }
-.temple-hymns { font-size: 0.85rem; color: #333; }
-.hymns-label { font-weight: bold; color: #222; }
+.temple-hymns { font-size: 0.85rem; color: #c8c4bc; }
+.hymns-label { font-weight: bold; color: #e8e4dc; }
 
 /* ── Chapter groups ── */
 .chapter-group { margin-bottom: 3.5rem; }
@@ -329,7 +338,7 @@ footer {
   flex-wrap: wrap;
   margin-bottom: 1.2rem;
   padding-bottom: 0.8rem;
-  border-bottom: 2px solid #111;
+  border-bottom: 2px solid #6a6560;
 }
 
 .group-label {
@@ -338,25 +347,25 @@ footer {
   font-weight: bold;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #fff;
-  background: #111;
+  color: #1c1a17;
+  background: #c8c4bc;
   padding: 0.15rem 0.5rem;
   flex-shrink: 0;
 }
 
-.group-title { font-size: 1.1rem; margin: 0; }
-.group-desc { font-size: 0.85rem; color: #444; margin: 0; margin-left: auto; font-style: italic; }
+.group-title { font-size: 1.1rem; margin: 0; color: #f0ece4; }
+.group-desc { font-size: 0.85rem; color: #9a9590; margin: 0; margin-left: auto; font-style: italic; }
 
 .chapter-card .verse-count {
   font-size: 0.75rem;
-  color: #555;
+  color: #6a6560;
   margin-top: 0.3rem;
   font-family: monospace;
 }
 
 .chapter-card .theme {
   font-size: 0.8rem;
-  color: #444;
+  color: #9a9590;
   margin-top: 0.25rem;
   font-style: italic;
   line-height: 1.4;
@@ -366,8 +375,8 @@ footer {
 .map-panel-layout {
   display: flex;
   height: 560px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #3a3530;
+  border-bottom: 1px solid #3a3530;
   margin: 0 0 3rem;
 }
 .map-panel-layout #temple-map {
@@ -379,43 +388,43 @@ footer {
   width: 310px;
   flex-shrink: 0;
   overflow-y: auto;
-  border-left: 1px solid #ddd;
-  background: #fff;
+  border-left: 1px solid #3a3530;
+  background: #1c1a17;
 }
 .sidebar-header {
   padding: 1.2rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #2e2b27;
   position: sticky;
   top: 0;
-  background: #fff;
+  background: #1c1a17;
   z-index: 1;
 }
-.sidebar-header h3 { font-size: 1.05rem; font-weight: bold; margin-bottom: 0.5rem; }
-.sidebar-header p { font-size: 0.78rem; color: #333; line-height: 1.5; }
+.sidebar-header h3 { font-size: 1.05rem; font-weight: bold; margin-bottom: 0.5rem; color: #f0ece4; }
+.sidebar-header p { font-size: 0.78rem; color: #9a9590; line-height: 1.5; }
 .sidebar-list { list-style: none; }
 .sidebar-item {
   display: flex;
   gap: 0.75rem;
   padding: 0.85rem 1rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #2e2b27;
   cursor: pointer;
   align-items: flex-start;
 }
-.sidebar-item:hover { background: #fafafa; }
-.sidebar-item.active { background: #f2f2f2; }
+.sidebar-item:hover { background: #252320; }
+.sidebar-item.active { background: #2e2b27; }
 .sidebar-item img {
   width: 64px;
   height: 64px;
   object-fit: cover;
   flex-shrink: 0;
-  border: 1px solid #ddd;
-  background: #ebebeb;
+  border: 1px solid #3a3530;
+  background: #2e2b27;
 }
 .sidebar-item-info { display: flex; flex-direction: column; min-width: 0; }
-.sidebar-tamil { font-size: 0.9rem; font-weight: bold; line-height: 1.3; }
-.sidebar-english { font-size: 0.78rem; color: #222; margin-top: 0.1rem; }
-.sidebar-district { font-size: 0.7rem; color: #555; margin-top: 0.15rem; }
-.sidebar-note { font-size: 0.73rem; color: #444; font-style: italic; line-height: 1.4; margin-top: 0.25rem; }
+.sidebar-tamil { font-size: 0.9rem; font-weight: bold; line-height: 1.3; color: #f0ece4; }
+.sidebar-english { font-size: 0.78rem; color: #c8c4bc; margin-top: 0.1rem; }
+.sidebar-district { font-size: 0.7rem; color: #9a9590; margin-top: 0.15rem; }
+.sidebar-note { font-size: 0.73rem; color: #9a9590; font-style: italic; line-height: 1.4; margin-top: 0.25rem; }
 .sidebar-group-label {
   padding: 0.55rem 1rem;
   font-size: 0.65rem;
@@ -423,15 +432,15 @@ footer {
   font-weight: bold;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #fff;
-  background: #111;
+  color: #1c1a17;
+  background: #c8c4bc;
   list-style: none;
 }
 
 @media (max-width: 640px) {
   .map-panel-layout { flex-direction: column; height: auto; }
   .map-panel-layout #temple-map { height: 300px; flex: none; }
-  .map-sidebar { width: 100%; max-height: 280px; border-left: none; border-top: 1px solid #ddd; }
+  .map-sidebar { width: 100%; max-height: 280px; border-left: none; border-top: 1px solid #3a3530; }
 }
 
 /* ── Temple entry photo ── */
@@ -446,13 +455,13 @@ footer {
   height: 135px;
   object-fit: cover;
   display: block;
-  border: 1px solid #ddd;
-  background: #f0f0f0;
+  border: 1px solid #3a3530;
+  background: #2e2b27;
 }
 .temple-photo-caption {
   display: block;
   font-size: 0.7rem;
-  color: #555;
+  color: #9a9590;
   text-align: right;
   margin-top: 0.25rem;
 }
